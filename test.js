@@ -4,19 +4,19 @@ let list =[
     {rank:3,name:'hodi',point:2},
     {rank:4,name:'dan',point:3}
 ]
+let templete = "";
+
 
 let a =0
+const table = document.querySelector("table");
+function createTemplate() {
+
 
   for (var i = 0; i < list.length; i++) {
       console.log(list[i].rank);
       
-    document.getElementById("more").innerHTML +=`<table>
-    <tr>
-        <th>Rank</th>
-        <th>Name</th>
-        <th>Points</th>
-        <th>Like/Dislike</th>
-    </tr>
+      templete +=`
+   
     <tr>
             <td>${list[i].rank}</td>
             <td>${list[i].name}</td>
@@ -25,20 +25,25 @@ let a =0
                 <i class="fa fa-thumbs-down"></i>
             </td>
         </tr>
-    </table>
+    
     `;
-    
+  }
+  return templete;
+
+  }
+  table.innerHTML += createTemplate();
+
+     
 function myFunction(id){
- console.log(id);
- 
-  a = list[id].point +=10
+    console.log(id);
     
-     points.innerHTML = a
+    list[id].point +=10
+       
+   
+    table.innerHTML = createTemplate();
 
-
-  }
-
-  }
+     }
+   
   
 
   let points = document.querySelector('.points')
