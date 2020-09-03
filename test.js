@@ -5,6 +5,7 @@ let list =[
     {rank:4,name:'dan',point:3}
 ]
 let templete = "";
+const mainTemplate = ` <table ><tr><th>Rank</th><th>Member Name</th><th>Total Points</th><th>  like</th><th>  </table>`;
 
 
 let a =0
@@ -36,7 +37,8 @@ function createTemplate() {
      
 function myFunction(id){
     console.log(id);
-    
+    templete = mainTemplate;
+
     list[id].point +=10
        
    

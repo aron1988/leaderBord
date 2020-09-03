@@ -1,65 +1,12 @@
-// let count =0
-// let buttons= document.querySelectorAll('.btn')
-// let score = document.querySelector('score')
-// buttons.addEventListener('click',function(){
-//     console.log('sucsses');
+let list =[
+    {rank:1,name:'aron',point:0},
+    {rank:2,name:'itai',point:1},
+    {rank:3,name:'hodi',point:2},
+    {rank:4,name:'dan',point:3}
+]
+
+
+for(i =0;i<list.length;i++){
+    console.log(list[i].point);
     
-// //  count++
-// })
-//  let count =0;
-// let score = document.querySelector('.points');
-
-// [...document.querySelectorAll('.btn')].forEach(function(item) {
-//     item.addEventListener('click', function() {
-//       console.log(count);
-//       count++
-//       score.innerHTML = count
-
-//     });
-
-//      });
-
-
-// let i = 0;
-
-
-// document.querySelectorAll('.btn').forEach(element => {
-//   ((j) => element.addEventListener("click", () => {
-//       count++
-
-//     console.log(j);
-//   }))(i);
-//   i++;
-//   score.innerHTML = count
-
-
-
-// });
-
-// let count =0;
-
-
-// function add(){
-//     count++
-   
-
-// }
-// console.log(add());
-
-// console.log(count);
-
-
-
-// let points = document.querySelector('.points')
-let count =0
-window.onload=function() {
-    var buts = document.querySelectorAll(".points");
-    for (var i=0;i<buts.length;i++) {
-        buts[i].addEventListener('click',function(){
-                console.log('sucsses');
-                
-            count++
-            buts[i].innerHTML = count
-            })
-  }
 }
